@@ -5,7 +5,7 @@ int main(){
 	//Counts Tabs
 	//counts newlines
 	int c, blank=0 , newLine=0, tabs=0; //int riesce a contenere EOF
-	while((c = getchar()) != EOF){
+	while((c = getchar()) != EOF && c != '*'){
 		if(c == ' ' ) blank++;
 		else if(c == '\n') newLine++;
 		else if(c == '\t') tabs++;
